@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Estoque em Tempo Real</title>
+    <link rel="stylesheet" href="/src/css/header.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+
+    <header class="flex-space-between-1">
+        <div class="hamburger-icon" id="icon">
+            <div class="icon-1" id="a"></div>
+            <div class="icon-2" id="b"></div>
+            <div class="icon-3" id="c"></div>
+            <div class="clear"></div>
+        </div>
+
+        <nav id="nav">
+
+            <ul class="flex-space-between g-2" >
+                <li><a href="http://localhost:5174/">Produtos</a></li>
+                <li><a href="http://localhost:5174/estoque">Estoque</a></li>
+                <li><a>Requisição</a></li>
+                <li><a href="http://localhost:5174/beanchmarking">Beachmarking Log</a></li>
+                <li><a href="http://localhost:5174/configuracao">Configurações</a></li>
+            </ul>
+        </nav>
+        
+        <button class="btnSair btnRed">Sair</button>
+    </header>
+
+    <div class="container">
+        <h2>Gestão de Estoque em Tempo Real</h2>
+        <div class="legenda">
+            <p class="l-verde">🟢 Em estoque</p>
+            <p class="l-amarelo">🟡 Baixo estoque</p>
+            <p class="l-vermelho">🔴 Sem estoque</p>
+        </div>
+        <table id="stock-table">
+            <thead class="titulos-tabela">
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade Disponível</th>
+                    <th>Localização</th>
+                    <th>EM</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Os dados da tabela serão preenchidos dinamicamente com JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <script src="/src/js/script.js"></script>
+</body>
+</html>
